@@ -60,8 +60,8 @@ def create_session(username):
     from nexochat_server import create_session as cs
     return cs(username)
 
-BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-SITE_URL = os.environ.get("NEXO_URL", "http://localhost:8080")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+SITE_URL = os.environ.get("NEXO_URL", "https://nexochat.bothost.tech/")
 
 HELP_TEXT = """
 🤖 <b>NexoChat Bot</b>
